@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1648220612 source:c:\users\allan\documents\ead\atividade1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"conjunto.h"
+
+1648220108 c:\users\allan\documents\ead\atividade1\conjunto.h
+
+1648220649 source:c:\users\allan\documents\ead\atividade1\conjunto.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"conjunto.h"
+
