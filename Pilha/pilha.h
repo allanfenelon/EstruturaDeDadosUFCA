@@ -20,3 +20,6 @@ void desempilha(Pilha* p);
 char consulta(Pilha* p);
 
 int palindromo(Pilha* p);
+Pilha* inverte_pilha(Pilha* p);
+
+

@@ -8,11 +8,12 @@ palindromo.
 
 */
 int main(){
-    Pilha *pali;
+    Pilha *pali, *invertida;
     char aux = ' ';
-    int tam, i;
-    i = 0;
+    int tam;
+    int i = 0;
     pali = cria();
+    invertida = cria();
 
     tam = tamanho(pali);
 
@@ -32,6 +33,24 @@ int main(){
         printf("\n\n Nao eh palindromo\n");
     }
 
+    invertida = inverte_pilha(pali);
+    tam =tamanho(invertida);
+    /* Por definição a pilha tem acesso apenas aos elementos do topo, quando invertemos
+    a pilha o elemento que está no inicio passa a está no topo!*/
+    printf("\n Invertida:");
+    while(i<tam){
+        printf("\n %c",consulta(invertida));
+        desempilha(invertida);
+        i++;
+    }
+    printf("\n Pilha original:");
+    tam =tamanho(pali);
+    i = 0;
+    while(i<tam){
+        printf("\n %c",consulta(pali));
+        desempilha(pali);
+        i++;
+    }
 
 
     return 0;

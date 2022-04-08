@@ -99,3 +99,19 @@ int palindromo(Pilha* p){
         return 0;
     }
 }
+
+Pilha* inverte_pilha(Pilha* p){
+    Pilha *aux = cria();
+    int qtdAUX = 0;
+    if(aux == NULL || p == NULL)
+        return -1;
+
+    qtdAUX = p->qtd;
+    while(qtdAUX > 0){
+        aux->qtd++;
+        aux->vet[aux->qtd] = p->vet[qtdAUX];
+        qtdAUX--;
+    }
+
+    return aux;
+}
